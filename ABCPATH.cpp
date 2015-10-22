@@ -70,7 +70,9 @@ int main( )
 				// Checking if this new co-ordinate is within bounds && that the new co-ordinate has the next alphabet w.r.t. s[x][y]
 				if( x >= 0 && x < r && y >= 0 && y < c && ( s[x][y] == 1 + s[p.first][p.second] ) )
 				{
-					// If this co-ordinate is not visited, set visit status to true & modify corresponding 'a' array count, modify max value if required. Push this new co-ordinate into queue as BFS from this co-ordinate must also be done to check for presence of next alphabet
+					// If this co-ordinate is not visited, set visit status to true & modify corresponding 'a' array count,
+					//modify max value if required. Push this new co-ordinate into queue as BFS from this co-ordinate must also be done...
+					//to check for presence of next alphabet
 					if( !visited[x][y] )
 					{
 						a[x][y] = 1 + a[p.first][p.second] ;
